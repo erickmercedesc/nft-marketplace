@@ -593,7 +593,7 @@
                     <div class="card no-hover text-center">
                       <div class="image-over">
                         <a href="/item-details">
-                          <img class="card-img-top" src="/img/nft_1.png" alt="">
+                          <img class="card-img-top" src="/img/nft1.png" alt="">
                         </a>
                       </div>
                       <div class="card-caption col-12 p-0">
@@ -610,7 +610,7 @@
                     <div class="card no-hover text-center">
                       <div class="image-over">
                         <a href="/item-details">
-                          <img class="card-img-top" src="/img/nft_2.png" alt="">
+                          <img class="card-img-top" src="/img/nft2.png" alt="">
                         </a>
                       </div>
                       <div class="card-caption col-12 p-0">
@@ -627,7 +627,7 @@
                     <div class="card no-hover text-center">
                       <div class="image-over">
                         <a href="/item-details">
-                          <img class="card-img-top" src="/img/nft_3.png" alt="">
+                          <img class="card-img-top" src="/img/nft3.png" alt="">
                         </a>
                       </div>
                       <div class="card-caption col-12 p-0">
@@ -644,7 +644,7 @@
                     <div class="card no-hover text-center">
                       <div class="image-over">
                         <a href="/item-details">
-                          <img class="card-img-top" src="/img/nft_4.png" alt="">
+                          <img class="card-img-top" src="/img/nft4.png" alt="">
                         </a>
                       </div>
                       <div class="card-caption col-12 p-0">
