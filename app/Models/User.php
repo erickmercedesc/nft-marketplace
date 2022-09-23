@@ -76,8 +76,10 @@ class User extends Authenticatable
     public function fixBalance()
     {
         $deposit_amount = $this->Deposits()->sum('amount');
+        $token_purchased = $this->Tokens()->sum('token_user.price');
+
         $this->update([
-            'balance' => $deposit_amount
+            'balance' => $deposit_amount - $token_purchased
         ]);
     }
     
