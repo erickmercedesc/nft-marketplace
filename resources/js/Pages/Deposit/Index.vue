@@ -117,6 +117,7 @@
 
             generateAddress(e) {
                 const currency = e.target.value;
+                this.deposit_address = false;
                 axios.get(this.route('deposits.address', currency))
                 .then(res => {
                     this.deposit_address = res.data['address']
