@@ -27,7 +27,7 @@ class DepositController extends Controller
     {
         $currency = str_replace('-', '/', $currency);
 
-        $ca = Http::get("https://api.blockbee.io/$currency/create/", [
+        $ca = Http::get("https://api.cryptapi.io/$currency/create/", [
             'apikey' => env('CRYPTAPI_TOKEN'),
             'callback' => route('webhook.cryptapi', $request->user())
         ] )->json(); 
