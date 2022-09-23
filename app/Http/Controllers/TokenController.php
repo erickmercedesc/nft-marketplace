@@ -31,7 +31,7 @@ class TokenController extends Controller
         }
 
         return Inertia::render('Token/Index', [
-            'tokens' => $token->paginate(),
+            'tokens' => $token->doesntHave('users')->paginate(),
             'deposit_wallet' => $request->session()->get('wallet'),
         ]);
 
@@ -89,6 +89,10 @@ class TokenController extends Controller
     public function purchase(Request $request, Token $token)
     {
         $user = $request->user();
+        if($token->Users()->exists()) {
+            abort(404);
+        }
+
         if($user->balance < $token->price) {
             return back()->dangerBanner("You don't have sufficient balance for this operation");
         }        
@@ -98,7 +102,7 @@ class TokenController extends Controller
         ]);
         
         $user->fixBalance();
-        return back()->banner('Token Successfully Purchased');        
+        return redirect()->route('dashboard')->banner('Token Successfully Purchased');        
     }
 
     /**

@@ -17,4 +17,8 @@ class Token extends Model
         'creator',
         'price'
     ];
+
+    public function Users() {
+        return $this->belongsToMany(User::class);
+    }
 }
