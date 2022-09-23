@@ -675,7 +675,7 @@
                 <div class="row items">
                   <div class="col-12 item">
                     <div class="single-work">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, et habitasse diam diam. Scelerisque lectus vulputate nisl imperdiet. Ultrices ipsum eget egestas volutpat. Pharetra congue suscipit consectetur proin hac pretium platea scelerisque non. Volutpat praesent sollicitudin cursus est praesent pretium accumsan quisque sed. Lorem ipsum dolor sit amet, cons</p>
+                      <p>What is Infinity? It is a decentralized holding company with an ecosystem that brings together Education, Real Estate, Decentralized Finance (DEFI), Non Fungible Tokens (NFTs), Business Holding and Algorithmic Trading in Forex and Synthetic Indices.</p>
                     </div>
                   </div>
                 </div>
@@ -690,7 +690,7 @@
                         <a class="navbar-brand" href="/">
                           <img alt="" src="/img/logo.png">
                         </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+                        <p></p>
                         <div class="social-icons d-flex">
                           <a class="facebook" href="#">
                             <svg class="svg-inline--fa fa-facebook-f fa-w-10" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
