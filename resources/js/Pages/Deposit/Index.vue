@@ -65,7 +65,7 @@
             </select>
 
             <div class="text-center mt-4" v-if="deposit_address">
-                <QrcodeVue class="mx-auto border-8 border-gray-50" value="deposit_address.address" :size="250" />
+                <QrcodeVue class="mx-auto border-8 border-gray-50" :value="deposit_address" :size="250" />
                 <span class="uppercase font-semibold">{{deposit_currency}} Address </span>
                 <span>{{deposit_address}}</span>
                 <div class="max-w-sm mx-auto">
