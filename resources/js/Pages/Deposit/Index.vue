@@ -61,7 +61,7 @@
                 <option value="btc">BTC</option>
                 <option value="eth">ETH</option>
                 <option value="trx">TRX</option>
-                <option value="usdt-trc20">USDT-TRC20</option>
+                <option value="trc20-usdt">USDT-TRC20</option>
             </select>
 
             <div class="text-center mt-4" v-if="deposit_address">
