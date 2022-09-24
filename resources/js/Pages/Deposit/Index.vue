@@ -56,7 +56,7 @@
 
         <div class="flex flex-col my-4 mx-4">
             <h2 class="text-2xl font-bold mb-2">Select Deposit Currency</h2>
-            <select v-model="deposit_currency" @change="generateAddress($event)" class="w-full rounded shadow border-gray-200" >
+            <select @change="generateAddress($event)" class="w-full rounded shadow border-gray-200" >
                 <option value="">Currency</option>
                 <option value="btc">BTC</option>
                 <option value="eth">ETH</option>
@@ -65,12 +65,18 @@
             </select>
 
             <div class="text-center mt-4" v-if="deposit_address">
-                <QrcodeVue class="mx-auto border-8 border-gray-50" :value="deposit_address" :size="250" />
-                <span class="uppercase font-semibold">{{deposit_currency}} Address </span>
-                <span>{{deposit_address}}</span>
-                <div class="max-w-sm mx-auto">
-                    <button @click="copy(deposit_address)" class="bg-green-800 text-gray-200 text-sm mt-2 mx-auto px-2 py-1">Copy Wallet</button>
+                <div class="mx-auto mb-4 max-w-fit border-4 border-black rounded">
+                    <QrcodeVue :value="deposit_address" :size="250" />
                 </div>
+                
+                <div class="flex flex-col">
+                    <span class="uppercase font-semibold">{{deposit_currency}} Address </span>
+                    <span>{{deposit_address}}</span>
+                    <div class="max-w-sm mx-auto">
+                        <button @click="copy(deposit_address)" class="bg-green-800 text-gray-200 text-sm mt-2 mx-auto px-2 py-1">Copy Wallet</button>
+                    </div>
+                </div>
+
             </div>
 
             
@@ -120,6 +126,7 @@
                 this.deposit_address = false;
                 axios.get(this.route('deposits.address', currency))
                 .then(res => {
+                    this.deposit_currency = res.data['currency']
                     this.deposit_address = res.data['address']
                 })
                 

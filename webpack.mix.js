@@ -18,7 +18,7 @@ mix.js('resources/js/app.js', 'public/js').vue()
     ])
     .webpackConfig(require('./webpack.config'));
 
-mix.browserSync('cloudmining.test');
+mix.browserSync('nft.test');
 
 if (mix.inProduction()) {
     mix.version();
